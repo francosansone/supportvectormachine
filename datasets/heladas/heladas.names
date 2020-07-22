@@ -1,0 +1,14 @@
+| Clases: 1 hay helada, 0 no
+|
+0, 1
+|
+|
+| atributos (todos estan normalizados en escala)
+|
+|
+minima de ayer:	continuous.
+minima de anteayer:	continuous.
+t bulbo humedo 20hs ayer:	continuous.
+t bulbo seco 20hs ayer:	continuous.
+nubosidad:	continuous.
+dia del anio:	continuous.

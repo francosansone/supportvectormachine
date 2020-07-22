@@ -1,0 +1,33 @@
+| Clases: Diagnosis (1 = malignant, 0 = benign) 
+|
+0, 1
+radius_mean:	continuos
+texture_mean:	continuos
+perimeter_mean:	continuos
+area_mean:	continuos
+smoothness_mean:	continuos
+compactness_mean:	continuos
+concavity_mean:	continuos
+concave points_mean:	continuos
+symmetry_mean:	continuos
+fractal_dimension_mean:	continuos
+radius_se:	continuos
+texture_se:	continuos
+perimeter_se:	continuos
+area_se:	continuos
+smoothness_se:	continuos
+compactness_se:	continuos
+concavity_se:	continuos
+concave points_se:	continuos
+symmetry_se:	continuos
+fractal_dimension_se:	continuos
+radius_worst:	continuos
+texture_worst:	continuos
+perimeter_worst:	continuos
+area_worst:	continuos
+smoothness_worst:	continuos
+compactness_worst:	continuos
+concavity_worst:	continuos
+concave points_worst:	continuos
+symmetry_worst:	continuos
+fractal_dimension_worst:	continuos

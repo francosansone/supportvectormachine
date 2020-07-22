@@ -9,12 +9,24 @@ parser.add_argument("--debug", help="enable debug information",
                     action="store_true")
 parser.add_argument("--file", type=str,
                     help="filename of dataset involved")
+parser.add_argument("--iterations", type=int,
+                    help="number of iterations to fit parameters")
+parser.add_argument("--gamma", type=float,
+                    help="gamma value")
 args = parser.parse_args()
 
 if not args.file:
     raise Exception("File name is needed")
 
-svmLib = SvmLib(args.file, debug=args.debug)
+iterations = 10
+if args.iterations:
+    iterations = args.iterations
+
+gamma = 1.
+if args.gamma:
+    gamma = args.gamma
+
+svmLib = SvmLib(args.file, debug=args.debug, iterations=iterations, gamma=gamma)
 
 svmLib.clear_folds()
 
@@ -28,10 +40,10 @@ print 'testing model...'
 
 errors = svmLib.test_model(selected_c)
 
-print 'model tested', errors
+print 'model tested', errors, selected_c
 
 mean = statistics.mean(errors)
-standard_deviation = statistics.pstdev(errors)
+standard_deviation = statistics.stdev(errors)
 
 print 'mean', mean
 print 'standard deviation', standard_deviation

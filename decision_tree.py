@@ -25,7 +25,7 @@ errors = dTreeLib.train_and_test()
 print 'model tested', errors
 
 mean = statistics.mean(errors)
-standard_deviation = statistics.pstdev(errors)
+standard_deviation = statistics.stdev(errors)
 
 print 'mean', mean
 print 'standard deviation', standard_deviation
